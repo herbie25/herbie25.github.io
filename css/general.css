@@ -8,14 +8,6 @@ div {
     display: block;/*en general para todos los div que se agregen*/
 }
 
-img {
-    display: block;/*en general todas la imagenes se desplazan como en bloques*/
-    margin-left: auto;/*margen en blaco de lado izquierdo con los dos margin en automatico
-    se logra que las imagenes queden al centro*/
-    margin-right: auto;/*margen en blanco de lado derecho*/
-    width: 40%; /*tamaño de las imagenes*/
-}
-
 .header {
     background-color: rgb(186, 186, 186);
     padding: 30px;
@@ -78,27 +70,24 @@ ul {
 
 .contenido {
     text-align: justify;
-    align-content: center;
     background-color: rgb(186, 186, 186);
-    padding-left: 5%;
-    padding-right: 5%;
 }
 
-.slider-container {
-    display: flex;
-    width: 100%;
-    height: 50vh;
-    overflow-x: scroll;
-    scroll-snap-type: x mandatory;
-  }
+div.gallery {/*aqui comienza la personalizacion de las imagenes de las galeria*/
+    margin: 5px;
+    border: 1px solid #ccc;
+    float: left;
+    width: 180px;
+}
   
-  .slider-container img {
-    flex: 0 0 50%;
+div.gallery:hover {/*aqui resalta la imagen cuando se pone el mouse encima de la imagen*/
+    border: 1px solid #777;
+}
+  
+div.gallery img {
     width: 100%;
-    object-fit: cover;
-    scroll-snap-align: center;
-  }
-
+    height: auto;
+}/*aqui termina la personalizacion de las imagenes de la galerias*/
 
 .footer {
     background-color: #777;
