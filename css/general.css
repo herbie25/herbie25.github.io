@@ -1,11 +1,16 @@
 body {
-    margin: 0;/*con esto no deja espacios en blanco en toda la pagina*/
-    font-family: Arial, Helvetica, sans-serif;/*tipo de texto y estilo*/
-    background-color: rgb(138, 138, 138);/*color del fondo de la pagina*/
+    /*con esto no deja espacios en blanco en toda la pagina*/
+    font-family: Arial, Helvetica, sans-serif;
+    /*tipo de texto y estilo*/
+    background-color: rgb(138, 138, 138);
+    /*color del fondo de la pagina*/
+    margin-right: 3%;
+    margin-left: 3%;
 }
 
 div {
-    display: block;/*en general para todos los div que se agregen*/
+    display: block;
+    /*en general para todos los div que se agregen*/
 }
 
 .header {
@@ -15,12 +20,14 @@ div {
 }
 
 
-.topnav { /*el estilo del la lista ul la barra de la navegacion*/
+.topnav {
+    /*el estilo del la lista ul la barra de la navegacion*/
     list-style-type: none;
     padding: 0;
     overflow: hidden;
     background-color: #f1f1f1;
-    position: -webkit-sticky; /* Safari */
+    position: -webkit-sticky;
+    /* Safari */
     position: sticky;
     top: 0;
 }
@@ -30,22 +37,18 @@ div {
     background-color: rgb(0, 143, 226);
 }
 
-ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-    background-color: #f1f1f1;
-    position: -webkit-sticky; /* Safari */
-    position: sticky;
-    top: 0;
+#active {
+    background-color: #4CAF50;
+    color: white;
+}
+
+.li:hover:not(#active) {
+    background-color: #555;
+    color: white;
 }
 
 .li {
     float: left;
-}
-
-.li a {
     display: block;
     color: #000;
     text-align: center;
@@ -53,41 +56,30 @@ ul {
     text-decoration: none;
 }
 
-.li a.active {
-    background-color: #4CAF50;
-    color: white;
-}
-
-.li a:hover:not(.active) {
-    background-color: #555;
-    color: white;
-}
-
-.section {/*todo el contenido de la pagina excepto el header*/
-    margin-right: 3%;
-    margin-left: 3%;
-}
-
 .contenido {
     text-align: justify;
     background-color: rgb(186, 186, 186);
 }
 
-div.gallery {/*aqui comienza la personalizacion de las imagenes de las galeria*/
+.gallery {
+    /*aqui comienza la personalizacion de las imagenes de las galeria*/
     margin: 5px;
     border: 1px solid #ccc;
     float: left;
     width: 180px;
 }
-  
-div.gallery:hover {/*aqui resalta la imagen cuando se pone el mouse encima de la imagen*/
+
+.gallery:hover {
+    /*aqui resalta la imagen cuando se pone el mouse encima de la imagen*/
     border: 1px solid #777;
 }
-  
-div.gallery img {
+
+.gallery img {
     width: 100%;
     height: auto;
-}/*aqui termina la personalizacion de las imagenes de la galerias*/
+}
+
+/*aqui termina la personalizacion de las imagenes de la galerias*/
 
 .footer {
     background-color: #777;
