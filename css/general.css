@@ -65,8 +65,8 @@ div {
     /*aqui comienza la personalizacion de las imagenes de las galeria*/
     margin: 5px;
     border: 1px solid #ccc;
-    float: left;
-    width: 180px;
+    width: 230px;
+    height: auto;
 }
 
 .gallery:hover {
@@ -74,10 +74,6 @@ div {
     border: 1px solid #777;
 }
 
-.gallery img {
-    width: 100%;
-    height: auto;
-}
 
 /*aqui termina la personalizacion de las imagenes de la galerias*/
 
