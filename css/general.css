@@ -1,11 +1,11 @@
 body {
     /*con esto no deja espacios en blanco en toda la pagina*/
+    margin: 0;
     font-family: Arial, Helvetica, sans-serif;
     /*tipo de texto y estilo*/
     background-color: rgb(138, 138, 138);
     /*color del fondo de la pagina*/
-    margin-right: 3%;
-    margin-left: 3%;
+    
 }
 
 div {
@@ -59,13 +59,15 @@ div {
 .contenido {
     text-align: justify;
     background-color: rgb(186, 186, 186);
+    margin-right: 3%;
+    margin-left: 3%;
 }
 
 .gallery {
     /*aqui comienza la personalizacion de las imagenes de las galeria*/
     margin: 5px;
     border: 1px solid #ccc;
-    width: 230px;
+    width: 210px;
     height: auto;
 }
 
